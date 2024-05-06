@@ -27,7 +27,14 @@ const Navbar = ({theme, setTheme}) => {
                 Offer
             </li>
             <li>
-                Location
+                <select>
+                    <option>Location</option>
+                    <option>Chennai</option>
+                    <option>Coimbatore</option>
+                    <option>Madurai</option>
+                    <option>Tenkasi</option>
+                </select>
+                
             </li>
             
         </ul>
