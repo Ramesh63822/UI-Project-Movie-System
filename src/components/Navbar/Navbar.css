@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Protest+Riot&family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+25+Charted&family=Protest+Riot&family=Sedan+SC&family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #0d9488; 
+    font-family: "Protest Riot", sans-serif;
+    text-align: start !important;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+h1.dark{
+    color: #f97316; 
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+li{
+    font-family: "Teko", sans-serif;
+    font-size: 22px;
+    font-weight: 450;
+    letter-spacing: 1px;
+    
+    display: inline-block;
+    margin: 5px 20px;
+    cursor: pointer;
+
+}
+
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0fdfa;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.navbar.dark{
+    background: #000;
+    color: #fff;
+}
+
+
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a7f3d0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.search-box.dark{
+    background: #fff;
+}
+
+.search-box input{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    width: 300px;
+    height: 30px;
+    
+    
+}
+
+.search-box.dark input{
+    color: #222;
+}
+
+.search-box input::placeholder{
+    color: #222;
+
+}
+
+.search-box.dark input::placeholder{
+    color: #222;
+
+}
+
+.search-box img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.toggle-icon{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 70px;
+}
+
+.button button{
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #a7f3d0;
+    font-size: 16px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    color: black;
+}
+
+.button.dark button{
+    background-color: #fff;  
+}
+
+.button.dark button:hover{
+    background-color: #f97316 ;
+}
+
+.button button:hover{
+    background-color: #0d9488;
+    color: white;
+}

@@ -1,0 +1,11 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: #6ee7b7;
+  transition: .5s;
+}
+
+.container.dark{
+  background-color: #222;
+  transition: 0.5s;
+}
