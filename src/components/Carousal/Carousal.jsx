@@ -7,6 +7,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 
 
+
 const Carousal = () => {
 
     const slides=[ranam,jawan,siren,lalsalam]
@@ -27,8 +28,8 @@ const Carousal = () => {
 
 
   return (
-    <div className=' h-[500px] w-[1345px] my-5 px-3 relative group'>
-        <div style={{backgroundImage: `url(${slides[index]})` }} className='w-full h-[400px] rounded-2xl bg-center bg-cover duration-500'>
+    <div className=' h-full w-full  relative group'>
+        <div style={{backgroundImage: `url(${slides[index]})` }} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'>
         </div>
         <div className='hidden group-hover:block absolute top-[40%] translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer '>
             <BsChevronCompactLeft onClick={beforeSlide} size={30}/>
@@ -37,7 +38,7 @@ const Carousal = () => {
             <BsChevronCompactRight onClick={afterSlide} size={30}/>
         </div>
         
-
+        
 
     </div>
   )
