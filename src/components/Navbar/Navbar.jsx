@@ -18,7 +18,7 @@ const Navbar = ({theme, setTheme}) => {
 
   return (
     
-    <div className={`navbar ${theme}`}>
+    <div  className={`navbar ${theme} `} >
         
         <h1 className={theme}>R-Movies</h1>
         <ul>

@@ -60,6 +60,7 @@ select{
     background-color: #f0fdfa;
     padding: 10px 20px;
     transition: 0.5s;
+    position: sticky;
 }
 
 .navbar.dark{
