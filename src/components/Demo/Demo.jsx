@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 
 const Demo = (props) => {
   return (
-    <div style={{width:'300px' , height:'500px', marginTop:'15px', marginLeft:'15px', marginBottom:'15px', backgroundColor:'#5ae6ab'}} className='transition-transform duration-300 transform hover:scale-105'>
+    <div style={{width:'300px' , height:'500px', marginTop:'15px', marginLeft:'15px', marginBottom:'15px'}} className='bg-gray-300 transition-transform duration-300 transform hover:scale-105'>
       <img src={props.image} alt='' style={{width:'300px', height:'400px'}} />
       <div style={{padding:'5px ', marginLeft:'5px'}}>
         <div ><h2 style={{fontFamily:'sans-serif',fontSize:'20px',fontWeight:'500',marginTop:'10px' , marginBottom:'5px'}}>{props.title}</h2></div>

@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   const [theme, setTheme] =useState('light')
   return (
-    <div className={`container ${theme}`}>
+    <div className={`container ${theme} bg-zinc-700`}>
       <div>
       {/* <div className='sticky top-0 z-10'> */}
         <Navbar theme = {theme} setTheme={setTheme} /> 
