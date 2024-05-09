@@ -5,14 +5,14 @@ import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { IoLogoYoutube } from "react-icons/io";
+import './Footer.css'
 
 
 
-
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div style={{backgroundColor:'#d5e0d8'}}>
-      <h1 style={{color:'black'}} className='flex  flex-cols mt-5  mb-[40px] align-center justify-center'>Contact Us</h1>
+    <div className={`footer ${props.theme}`} >
+      <h1 className={`contactus ${props.theme} flex  flex-cols mt-5  mb-[40px] align-center justify-center`}>Contact Us</h1>
     <footer className='grid grid-cols-2 '>
       <div className=" mt-5 mb-10  grid grid-cols-2">
         <div>                        

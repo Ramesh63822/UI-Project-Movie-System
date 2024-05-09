@@ -1,0 +1,16 @@
+.footer.dark{
+    background-color: black;
+    color:white;
+}
+
+.footer.light{
+    background-color: #F2ECBE;
+}
+
+.contactus{
+    color: black;
+}
+
+.contactus.dark{
+    color: orange;
+}

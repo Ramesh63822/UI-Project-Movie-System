@@ -3,10 +3,9 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Carousal from './components/Carousal/Carousal';
-
-import Demo from './components/Demo/Demo';
 import MovieCards from './components/MovieCards/MovieCards';
 import Footer from './components/Footer/Footer';
+
 
 
 function App() {
@@ -20,13 +19,14 @@ function App() {
       
       <Carousal />
       <div className='newRelease'>
-      <h1 style={{marginBottom:'25px', marginTop:'30px'}}>
+      <h1 style={{marginBottom:'25px',color:'black', fontSize:'40px' , marginTop:'30px'}}>
         New Release
       </h1>
       </div>      
       
-      <MovieCards />
-      <Footer/>
+      <MovieCards  />
+      <Footer theme={theme}/>
+      
       
  
     </div>

@@ -6,7 +6,7 @@ import search_icon_light from './assets/search-w.png'
 import search_icon_dark from './assets/search-b.png'
 import toggle_light from './assets/night.png'
 import toggle_dark from './assets/day.png'
-import Carousal from '../Carousal/Carousal'
+import {Link} from 'react-router-dom'
 
 
 
@@ -51,7 +51,7 @@ const Navbar = ({theme, setTheme}) => {
         <img src={theme == 'light'? toggle_light : toggle_dark} alt="" onClick={()=> {toggle_mode()}} className='toggle-icon'/>
 
         <div className={`button ${theme}`}>
-            <button><h5>Sign in</h5></button>
+           <button><h5>Sign in</h5></button>
         </div>
     
     </div>

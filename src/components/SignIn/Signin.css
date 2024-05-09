@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Protest+Riot&family=Sedan+SC&display=swap');
+
+
+
+
+.container{
+    padding: 15px;
+    background-color: #e8e0e0;
+    width: 500px;
+    height:500px ;
+}
+
+.horizontal{
+    color: #af3ea1;
+    border: 1px solid ;
+    margin-bottom: 30px;
+}
+h1{
+    font-family: "Protest Riot", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #000000;
+}
+
+
+.content{
+    margin-left: 25px
+}
+
+.input h2{
+    font-size: 18px;
+    margin-bottom: 10px;   
+}
+
+.input input{
+    width: 420px;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #af3ea1 ;
+}
+
+button{
+    background-color: #6ae86a;
+    border-radius: 20px;
+    width: 70%;
+    height: 35px;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+button:hover{
+    background-color: #2bee2b;
+}
+
+hr{
+    color: #af3ea1;
+    border: 1px solid ;
+    margin-bottom: 30px;
+}
+
+h6{
+    margin-top: 15px;
+    text-align: center;
+}

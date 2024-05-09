@@ -10,7 +10,7 @@
 }
 
 h1{
-    color: #0d9488; 
+    color: #9A3B3B; 
     font-family: "Protest Riot", sans-serif;
     text-align: start !important;
     font-weight: 400;
@@ -57,7 +57,7 @@ select{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f0fdfa;
+    background-color: #E4C59E;
     padding: 10px 20px;
     transition: 0.5s;
     position: sticky;
@@ -80,7 +80,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #a7f3d0;
+    background-color: #F2ECBE;
     padding: 10px 20px;
     border-radius: 50px;
     transition: 0.5s;
@@ -136,7 +136,7 @@ ul{
     width: 100px;
     height: 40px;
     border: none;
-    background-color: #a7f3d0;
+    background-color: #F2ECBE;
     font-size: 16px;
     letter-spacing: .5px;
     cursor: pointer;
@@ -152,7 +152,7 @@ ul{
 }
 
 .button button:hover{
-    background-color: #0d9488;
+    background-color: #C08261;
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
 }
