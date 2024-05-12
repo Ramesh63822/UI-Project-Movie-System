@@ -6,7 +6,7 @@ import search_icon_light from './assets/search-w.png'
 import search_icon_dark from './assets/search-b.png'
 import toggle_light from './assets/night.png'
 import toggle_dark from './assets/day.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -16,14 +16,14 @@ const Navbar = ({theme, setTheme}) => {
         theme == 'light'? setTheme('dark') : setTheme('light')
     }
 
+
   return (
     
-    <div  className={`navbar ${theme} `} >
-        
+    <div  className={`navbar h-[75px] ${theme} `} >
         <h1 className={theme}>R-Movies</h1>
         <ul>
             <li>
-                Home
+            <Link to='/'>Home</Link>
             </li>
             <li>
                 Offer
@@ -50,9 +50,16 @@ const Navbar = ({theme, setTheme}) => {
 
         <img src={theme == 'light'? toggle_light : toggle_dark} alt="" onClick={()=> {toggle_mode()}} className='toggle-icon'/>
 
-        <div className={`button ${theme}`}>
-           <button><h5>Sign in</h5></button>
+  
+    <div className={`button ${theme}`}>
+            
+            <Link to='/signin'>
+            <button><h5>Sign in</h5></button>
+            </Link>
+          
         </div>
+   
+        {/* <Outlet /> */}
     
     </div>
   )

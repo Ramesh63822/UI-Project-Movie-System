@@ -32,8 +32,7 @@ import spiderManNoWayHome from './assertsMovieCard/spiderManNoWayHome.jpg'
 import shangChi from './assertsMovieCard/shangChi.jpg'
 import hangOver from './assertsMovieCard/hangOver.jpg'
 import flash from './assertsMovieCard/flash.jpg'
-import batManTheDarkKnight from './assertsMovieCard/batManTheDarkKnight.jpg'
-import joker from './assertsMovieCard/joker.jpg'
+
 
 
 

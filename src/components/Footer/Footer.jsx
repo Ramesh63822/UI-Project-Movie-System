@@ -9,10 +9,10 @@ import './Footer.css'
 
 
 
-const Footer = (props) => {
+const Footer = (props) => { 
   return (
-    <div className={`footer ${props.theme}`} >
-      <h1 className={`contactus ${props.theme} flex  flex-cols mt-5  mb-[40px] align-center justify-center`}>Contact Us</h1>
+    <div className={`footer ${props.theme}  mt-5`} >
+      <h1 className={`contactus ${props.theme} flex  flex-cols mt-5  mb-[30px] align-center justify-center`}>Contact Us</h1>
     <footer className='grid grid-cols-2 '>
       <div className=" mt-5 mb-10  grid grid-cols-2">
         <div>                        

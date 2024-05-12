@@ -3,37 +3,41 @@
 
 
 
-.signin{
+.register{
     padding: 15px;
     background-color: #f1ecc3;
     width: 500px;
-    /* height:500px ; */
+    /* height:750px ; */
     margin-left: 30%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.signin .dark{
-    background-color: black !important;
+.register.dark{
+    background-color: #0f0c0c;
 }
 
-.signin .dark h1{
-    color: #f97316;
+.text{
+    color: blue;
 }
 
 .horizontal{
     color: #ED9455;
     border: 1px solid ;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-.signin h1{ 
+.register h1{
     font-family: "Protest Riot", sans-serif;
     text-align: center;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
     color: #ED9455;
-    margin-left: 40%;
+    margin-left: 30%;
+}
+
+.register.dark h1{
+    color: #f97316;
 }
 
 
@@ -43,21 +47,37 @@
 
 .input h2{
     font-size: 18px;
-    margin-bottom: 5px;   
-    margin-top: 5px;
+    margin-bottom: 5px; 
+    margin-top: 5px;  
+}
+
+.register.dark h2{
+    color: white;
+}
+
+.register.dark h6{
+    color: white;
+}
+
+.register.dark hr{
+    color: #f97316;
+}
+
+.register.dark button:hover{
+    background-color: #f97316;
+}
+
+.register.dark input{
+    border: 1px solid #f97316;
 }
 
 .input input{
     width: 420px;
     height: 35px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     outline: none;
     border: 1px solid #ED9455 ;
-}
-
-.text{
-    color: blue;
 }
 
 .input p{
@@ -76,7 +96,7 @@ button{
     border-radius: 20px;
     width: 70%;
     height: 35px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 20px;
     margin-bottom: 40px;
 }
