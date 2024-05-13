@@ -38,42 +38,43 @@ import flash from './assertsMovieCard/flash.jpg'
 
 
 
-const MovieCards = () => {
+const MovieCards = (props) => {
+  const theme = props.theme;
   return (
     <div className='grid grid-cols-4'>
       
-      <Demo image={dora} title='Dora And The Lost City Of Gold' rating='8.2' language='English'/>
-      <Demo image={itChapter2} title='IT Chapter 2' rating='7.5' language='English'/>
-      <Demo image={abominable} title='Abominable' rating='8.5' language='English'/>
-      <Demo image={detectivePikachu} title='Pokemon Detective Pikachu' rating='8' language='English'/>
-      <Demo image={pinocchio} title='Pinocchio' rating='7' language='English'/>
-      <Demo image={piratesOfTheCaribbean} title='Pirates Of The Caribbean' rating='9' language='English'/>
-      <Demo image={maleficent} title='Maleficent' rating='8.9' language='English'/>
-      <Demo image={theSchoolGoodAndBad} title='The School For Good And Bad' rating='8.3' language='English'/>
-      <Demo image={theFamilyPlan} title='The Family Plan' rating='8.5' language='English'/>
-      <Demo image={poniyinSelvanPart1} title='PS I' rating='9' language='Tamil'/>
-      <Demo image={sarpatta} title='Sarpatta' rating='9.5' language='Tamil'/>
-      <Demo image={doctor} title='Doctor' rating='8.5' language='Tamil'/>
-      <Demo image={bigil} title='Bigil' rating='7' language='Tamil'/>
-      <Demo image={siren} title='Siren' rating='6.25' language='Tamil'/>
-      <Demo image={aadukalam} title='Aadukalam' rating='9' language='Tamil'/>
-      <Demo image={avengersEndGame} title='Avengers End Game' rating='9.3' language='English'/>
-      <Demo image={theMarvels} title='The Marvels' rating='7.7' language='English'/>
-      <Demo image={thorLoveAndThunder} title='Thor Love And Thunder' rating='8.9' language='English'/>
-      <Demo image={captainMarvel} title='Captain Marvel' rating='9' language='English'/>
-      <Demo image={eternals} title='Enternals' rating='7.8' language='English'/>
-      <Demo image={blackPantherWakandaForever} title='Wakanda Forever' rating='8.5' language='English'/>
-      <Demo image={loki} title='Loki' rating='8.3' language='English'/>
-      <Demo image={ironMan3} title='Iron Man 3' rating='8.7' language='English'/>
-      <Demo image={spiderManFarFromHome} title='Spideman Far From Home' rating='7.8' language='English'/>
-      <Demo image={wandaVision} title='Wanda Vision' rating='5.5' language='English'/>
-      <Demo image={guardiansOfTheGalaxyVol2} title='Guardians Of The Galaxy Vol2 ' rating='8.6' language='English'/>
-      <Demo image={msMarvel} title='MS Marvel' rating='7.4' language='English'/>
-      <Demo image={ironMan2} title='Iron Man 2' rating='9.1' language='English'/>
-      <Demo image={spiderManNoWayHome} title='Spiderman No Way Home' rating='7.8' language='English'/>
-      <Demo image={shangChi} title='Shang Chi' rating='8.7' language='English'/>
-      <Demo image={hangOver} title='Hang Over' rating='9.9' language='English'/>
-      <Demo image={flash} title='Flash' rating='8.9' language='English'/>
+      <Demo image={dora} title='Dora And The Lost City Of Gold' rating='8.2' language='English' theme={theme}/>
+      <Demo image={itChapter2} title='IT Chapter 2' rating='7.5' language='English' theme={theme}/>
+      <Demo image={abominable} title='Abominable' rating='8.5' language='English' theme={theme}/>
+      <Demo image={detectivePikachu} title='Pokemon Detective Pikachu' rating='8' language='English' theme={theme}/>
+      <Demo image={pinocchio} title='Pinocchio' rating='7' language='English' theme={theme}/>
+      <Demo image={piratesOfTheCaribbean} title='Pirates Of The Caribbean' rating='9' language='English' theme={theme}/>
+      <Demo image={maleficent} title='Maleficent' rating='8.9' language='English' theme={theme}/>
+      <Demo image={theSchoolGoodAndBad} title='The School For Good And Bad' rating='8.3' language='English' theme={theme}/>
+      <Demo image={theFamilyPlan} title='The Family Plan' rating='8.5' language='English' theme={theme}/>
+      <Demo image={poniyinSelvanPart1} title='PS I' rating='9' language='Tamil' theme={theme}/>
+      <Demo image={sarpatta} title='Sarpatta' rating='9.5' language='Tamil' theme={theme}/>
+      <Demo image={doctor} title='Doctor' rating='8.5' language='Tamil' theme={theme}/>
+      <Demo image={bigil} title='Bigil' rating='7' language='Tamil' theme={theme}/>
+      <Demo image={siren} title='Siren' rating='6.25' language='Tamil' theme={theme}/>
+      <Demo image={aadukalam} title='Aadukalam' rating='9' language='Tamil' theme={theme}/>
+      <Demo image={avengersEndGame} title='Avengers End Game' rating='9.3' language='English' theme={theme}/>
+      <Demo image={theMarvels} title='The Marvels' rating='7.7' language='English' theme={theme}/>
+      <Demo image={thorLoveAndThunder} title='Thor Love And Thunder' rating='8.9' language='English' theme={theme}/>
+      <Demo image={captainMarvel} title='Captain Marvel' rating='9' language='English' theme={theme}/>
+      <Demo image={eternals} title='Enternals' rating='7.8' language='English' theme={theme}/>
+      <Demo image={blackPantherWakandaForever} title='Wakanda Forever' rating='8.5' language='English' theme={theme}/>
+      <Demo image={loki} title='Loki' rating='8.3' language='English' theme={theme}/>
+      <Demo image={ironMan3} title='Iron Man 3' rating='8.7' language='English' theme={theme}/>
+      <Demo image={spiderManFarFromHome} title='Spideman Far From Home' rating='7.8' language='English' theme={theme}/>
+      <Demo image={wandaVision} title='Wanda Vision' rating='5.5' language='English' theme={theme}/>
+      <Demo image={guardiansOfTheGalaxyVol2} title='Guardians Of The Galaxy Vol2 ' rating='8.6' language='English' theme={theme}/>
+      <Demo image={msMarvel} title='MS Marvel' rating='7.4' language='English' theme={theme}/>
+      <Demo image={ironMan2} title='Iron Man 2' rating='9.1' language='English' theme={theme}/>
+      <Demo image={spiderManNoWayHome} title='Spiderman No Way Home' rating='7.8' language='English' theme={theme}/>
+      <Demo image={shangChi} title='Shang Chi' rating='8.7' language='English' theme={theme}/>
+      <Demo image={hangOver} title='Hang Over' rating='9.9' language='English' theme={theme}/>
+      <Demo image={flash} title='Flash' rating='8.9' language='English' theme={theme}/>
       {/* <Demo image={batManTheDarkKnight} title='The Dark Knight' rating='7.2' language='English'/>
       <Demo image={joker} title='Joker' rating='6' language='English'/> */}
       </div>

@@ -6,12 +6,9 @@ import { Link } from 'react-router-dom';
 
 
 const Demo = (props) => {
-  const { image, title, language, rating } = props;
+  const { image, title, language, rating , theme} = props;
   return (
-    <Link to={{
-      pathname: '/booking',
-      state: { image, title, language, rating }
-    }}  >
+    <Link to={`/booking?image=${image}&title=${title}&language=${language}&rating=${rating}&theme=${theme}`} >
     <div style={{width:'300px' , height:'500px', marginTop:'15px', marginLeft:'15px', marginBottom:'15px'}} className='bg-gray-300 transition-transform duration-300 transform hover:scale-105'>
       <img src={props.image} alt='' style={{width:'300px', height:'400px'}} />
       <div style={{padding:'5px ', marginLeft:'5px'}}>

@@ -1,5 +1,5 @@
 
-
+import { useState , useEffect} from 'react';
 import React from 'react'
 import './Navbar.css'
 import search_icon_light from './assets/search-w.png'
@@ -7,6 +7,7 @@ import search_icon_dark from './assets/search-b.png'
 import toggle_light from './assets/night.png'
 import toggle_dark from './assets/day.png'
 import { Link } from 'react-router-dom'
+import { Alert } from 'bootstrap';
 
 
 
@@ -17,6 +18,23 @@ const Navbar = ({theme, setTheme}) => {
     }
 
 
+    const [showAlert, setShowAlert] = useState(false);
+
+    useEffect(() => {
+      if (showAlert) {
+        const timer = setTimeout(() => {
+          setShowAlert(false);
+        }, 1500);
+  
+        // Clear timeout if the component is unmounted or showAlert is set to false
+        return () => clearTimeout(timer);
+      }
+    }, [showAlert]);
+  
+    const handleBookTickets = () => {
+      setShowAlert(true);
+    };
+
   return (
     
     <div  className={`navbar h-[75px] ${theme} `} >
@@ -25,9 +43,16 @@ const Navbar = ({theme, setTheme}) => {
             <li>
             <Link to='/'>Home</Link>
             </li>
-            <li>
+            <li onClick={handleBookTickets}>
                 Offer
             </li>
+            {showAlert && (
+        <div className="floating-alert">
+          <strong className="font-bold">Offer's !</strong>
+          <span className="block sm:inline">&nbsp; No Offers Found.</span>
+        </div>
+      )}
+            
             <li>
                 <select>
                     <option>Location</option>

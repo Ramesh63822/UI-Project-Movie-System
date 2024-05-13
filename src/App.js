@@ -35,7 +35,7 @@ function App() {
       }
 
       function Home({theme}) {
-  return (
+  return (  
     <>
       <Carousal />
       <div className={`newRelease ${theme}`}>
@@ -43,7 +43,7 @@ function App() {
           New Release
         </h1>
       </div>
-      <MovieCards />
+      <MovieCards theme={theme}/>
     </>
   
 
