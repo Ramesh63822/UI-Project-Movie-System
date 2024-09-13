@@ -1,7 +1,13 @@
+
+
+
+
+
 {
   "name": "movie",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Ramesh63822.github.io/React_MovieProject",
   "dependencies": {
     "@material-tailwind/react": "^2.1.9",
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,7 +23,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "react-router-dom": "^6.23.0",
     "tailwindcss": "^3.4.3"
   }
